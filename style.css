@@ -1,0 +1,35 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #614051;
+    text-align: center;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    color: black;
+}
+nav {
+    text-align: center;
+}
+body {
+    background-color: lightgray;
+}
+a:link {
+    color:blue
+}
+a:visited {
+    color:crimson
+}
+a:hover {
+    color:darkgreen
+}
+.chwork{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 200px;
+    margin-left: 200px;
+    border: 3px solid #614051;
+    list-style-position: inside;
+    text-align: center;
+}
