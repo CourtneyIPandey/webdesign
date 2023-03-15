@@ -1,0 +1,39 @@
+article {
+	padding: 10px;
+	border: 3px #614051;
+    border-style: groove;
+    border-radius: 10px;
+    background-color: darkolivegreen;
+    width: 80%;
+    max-width: 900px;
+    min-width: 500px;
+    margin: 3vw auto;
+    content: "";
+    clear: both;
+    display: table;
+}
+article>p {
+    margin: 10px;
+}
+figure {
+    float: left;
+    width: 35vw;
+    margin: 2vh 0;
+    box-sizing: border-box;
+}
+  
+figure img {
+    display: block;
+    height: 185px;
+    width: 185px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+figcaption {
+    text-align: center;
+    clear: both;
+}
+article:nth-child(even) > figure {
+    float: right;
+ }
