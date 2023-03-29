@@ -5,7 +5,9 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="style.css"/> <!--Gives error-->
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title>Home Page</title>
    </head>
    
@@ -13,22 +15,26 @@
         <header>
             <h1>Chelsea Handler</h1>
         </header>
-            <nav class="topnav">
-              <a class="active" href="index.html">Home</a> | <a href="faq.html">FAQs</a> |  <a href="gallery.html">Gallery</a> | 
-              <a href="contact-us.html">Contact Us</a> 
+            <nav class="w3-container w3-deep-purple w3-padding-16 w3-center">
+              <i class="fa fa-home" style="font-size:36px;color:palevioletred"></i><a href="index.html" class="w3-button w3-hover-purple w3-round-xxlarge">Home</a> <i class="fa fa-question" style="font-size:36px;color:palevioletred"></i><a href="faq.html" class="w3-button w3-hover-purple w3-round-xxlarge">FAQs</a> 
+              <i class="fa fa-picture-o" style="font-size:36px;color:palevioletred"></i><a href="gallery.html" class="w3-button w3-hover-purple w3-round-xxlarge">Gallery</a> <i class="fa fa-envelope-open" style="font-size:36px;color:palevioletred"></i><a href="contact-us.html" class="w3-button w3-hover-purple w3-round-xxlarge">Contact Us</a> 
             </nav>
-            <section>
-                <h2>Overview</h2>
-                <blockquote> 
+            <section class="w3-card-4" style="width: 100%;">
+              <header class="w3-container w3-pale-red">
+                <h2>Overview</h2></header>
+                <div class="w3-container">
+                  <blockquote> 
                     Chelsea Handler is best known for her tv show titled <strong>Chelsea Lately</strong>.
                     The show ran from 2007 to 2014 on E! network.
                     Chelsea is also an author. She has written six non-fiction books.
                     She has 4.8 million followers on Instagram. On Twitter she has 7.7 million followers.
-                </blockquote>
+                  </blockquote>
+                </div>
             </section>
             <hr>
-            <main>
-                <h3>Career</h3>
+            <main class="w3-card-4" style="width: 100%;">
+              <header class="w3-container w3-teal">
+                <h3><i class="fa fa-briefcase" style="font-size:36px;color:purple"></i>Career<i class="fa fa-briefcase" style="font-size:36px;color:purple"></i></h3></header>
                 <p>
                     Chelsea first appeard on the Oxygen tv series Girls Behaving Badley(2002-2005).
                     She also appeard on a range of shows such as Weekends at the D.L., The Burnie Mac Show,
@@ -45,18 +51,19 @@
                     All six of Chelsea's books have made the <em>New York Times Best Seller List</em>, 
                     five of which have reatched number one. The names and dates of said books are as follows.
                 </p>
-                <ul class="chwork">
-                    <li>My Horizontal Life: A Collection of One-Night Stands (2005)</li>
-                    <li>Are You There, Vodka? It's Me, Chelsea (2008)</li>
-                    <li>Chelsea Chelsea Bang Bang (2010)</li>
-                    <li>Lies That Chelsea Handler Told Me (2011)</li>
-                    <li>Uganda Be Kidding Me (2014)</li>
-                    <li>Life Will Be the Death of Me (2019)</li>
+                <ul class="w3-ul w3-border w3-border-deep-purple w3-center">
+                    <li class="w3-hover-pale-red">My Horizontal Life: A Collection of One-Night Stands (2005)</li>
+                    <li class="w3-hover-deep-purple">Are You There, Vodka? It's Me, Chelsea (2008)</li>
+                    <li class="w3-hover-pale-red">Chelsea Chelsea Bang Bang (2010)</li>
+                    <li class="w3-hover-deep-purple">Lies That Chelsea Handler Told Me (2011)</li>
+                    <li class="w3-hover-pale-red">Uganda Be Kidding Me (2014)</li>
+                    <li class="w3-hover-deep-purple">Life Will Be the Death of Me (2019)</li>
                 </ul>
             </main>
             <hr>
-            <div>
-                <h3>Activisim</h3>
+            <div class="w3-card-4" style="width: 100%;"> 
+              <header class="w3-container w3-pale-red">
+                <h3><i class="fa fa-hand-peace-o" style="font-size:36px;color:teal"></i>Activisim<i class="fa fa-hand-peace-o" style="font-size:36px;color:teal"></i></h3></header>
                 <p>
                     Handler's activism work has included speaking at universities and collaborating with organizations
                     to get officials elected that support abortion rights. Chelsea also uses her platform to be vocal in her 
@@ -66,49 +73,48 @@
                     Chelsea has also received two awards for her activism amongst the LGBT community.
                 </p>
             </div>
-            <!-- W3 validator shows three errors for cellspacing attribute, cellpadding attribute, and the border attribute.
+            <!-- W3 validator shows two errors for cellspacing attribute, cellpadding attribute.
             The errors could be fixed by using CSS-->
-            <table class="chwork" border="1" cellspacing="2" cellpadding="2">
+            <table class="chwork" style="border:3px solid purple; margin-left:auto;margin-right:auto;" cellspacing="2" cellpadding="2">
                 <caption>Chelsea's TV Work</caption>
                 <thead>
-                  <tr>
+                  <tr class="w3-teal">
                     <th scope="col" abbr="Column 1" id="col1">Title</th>
                     <th scope="col" abbr="Column 2" id="col2">Type</th>
                     <th scope="col" abbr="Column 3" id="col3">Time</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr class="w3-hover-deep-purple">
                     <th scope="row">Girls Behaving Badly</th>
                     <td headers="col2">Reality TV</td>
                     <td headers="col3">2002-2005</td>
                   </tr>
-                  <tr>
+                  <tr class="w3-hover-pale-red">
                     <th scope="row">The Chelsea Handler Show</th>
                     <td headers="col2">Talk Show</td>
                     <td headers="col3">2006</td>
                   </tr>
-                  <tr>
+                  <tr class="w3-hover-deep-purple">
                     <th scope="row">Chelsea Lately</th>
                     <td headers="col2">Talk Show</td>
                     <td headers="col3">2007-2014</td>
                   </tr>
-                  <tr>
+                  <tr class="w3-hover-pale-red">
                     <th scope="row">Chelsea Does</th>
                     <td headers="col2">Documentary</td>
                     <td headers="col3">2016</td>
                   </tr>
-                  <tr>
+                  <tr class="w3-hover-deep-purple">
                     <th scope="row">Revolution</th>
                     <td headers="col2">Stand Up</td>
                     <td headers="col3">2022</td>
                   </tr>
                 </tbody>
               </table>
-        <footer>
-            <p>Author: Courtney Pandey</p>
-            <p>This website is a project for <a href="https://www.dallascollege.edu/pages/default.aspx">Dallas Community College</a></p>
-            <p>Contact: <a href="mailto:e3613141@student.dcccd.edu">Email me</a></p>
+        <footer class="w3-container w3-deep-purple w3-center">
+            <p>This website is a project for <a href="https://www.dallascollege.edu/pages/default.aspx" class="w3-button w3-hover-purple w3-round-xxlarge">Dallas Community College</a>    
+            Author: Courtney Pandey</p> <p> <i class="fa fa-envelope-open" style="font-size:36px;color:palevioletred"></i> Contact: <a href="mailto:e3613141@student.dcccd.edu" class="w3-button w3-hover-purple w3-round-xxlarge">Email</a></p>
         </footer>
 
     </body>

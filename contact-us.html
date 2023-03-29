@@ -6,32 +6,61 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="style.css" />
-      <style>
-        .topnav {
-            background-color:#614051;
-            overflow: hidden;
-            position: sticky;
-        }
-    </style>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title>Contact Us</title>
    </head>
    <body>
     <header>
         <h1>Contact US</h1>
-        <nav class="topnav">
-            <a class="action" href="index.html">Home</a> | <a href="faq.html">FAQs</a> | <a href="gallery.html">Gallery</a> | 
-            <a href="contact-us.html">Contact Us</a> 
+        <nav class="w3-container w3-deep-purple w3-padding-16 w3-center">
+            <i class="fa fa-home" style="font-size:36px;color:palevioletred"></i><a href="index.html" class="w3-button w3-hover-purple w3-round-xxlarge">Home</a> <i class="fa fa-question" style="font-size:36px;color:palevioletred"></i><a href="faq.html" class="w3-button w3-hover-purple w3-round-xxlarge">FAQs</a> 
+            <i class="fa fa-picture-o" style="font-size:36px;color:palevioletred"></i><a href="gallery.html" class="w3-button w3-hover-purple w3-round-xxlarge">Gallery</a> <i class="fa fa-envelope-open" style="font-size:36px;color:palevioletred"></i><a href="contact-us.html" class="w3-button w3-hover-purple w3-round-xxlarge">Contact Us</a> 
         </nav>
     </header>
     <fieldset>
-        <legend>Contact The Author</legend>
+        <div class="w3-container w3-teal">
         <h2>Your Personal Information</h2>
-        <form id="youveGotMail" action="mailto:e3613141@student.dcccd.edu" method="post">
+        </div>
+        <form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-teal w3-margin">
+            <h2 class="w3-center">Contact Us</h2>
+             
+            <div class="w3-row w3-section">
+              <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                <div class="w3-rest">
+                  <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
+                </div>
+            </div>
+            
+            <div class="w3-row w3-section">
+              <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                <div class="w3-rest">
+                  <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
+                </div>
+            </div>
+            
+            <div class="w3-row w3-section">
+              <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+                <div class="w3-rest">
+                  <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+                </div>
+            </div>
+            
+            <div class="w3-row w3-section">
+              <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+                <div class="w3-rest">
+                  <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+                </div>
+            </div>
+            
+            <div class="w3-row w3-section">
+              <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+                <div class="w3-rest">
+                  <input class="w3-input w3-border" name="message" type="text" placeholder="Message">
+                </div>
+            </div>
             <p>
-                <label title="fullname"> First and Last Name <input type="text" name="fullname" placeholder="Full Name"></label>
-            </p>
-            <p>
-                <label title="options">How Soon Would You Like A Response</label>
+                <label class="w3-text-teal" title="options"><b>How Soon Would You Like A Response</b></label>
                 <select name="optionsID">
                   <option value="">&larr;&nbsp;Response Time&nbsp;&rarr;</option>
                   <option value="1">ASAP</option>
@@ -40,21 +69,50 @@
                 </select>
             </p>
             <p>
-                <label title="question">Question <input type="radio" name="request"></label>
-                <label title="comment">Comment <input type="radio" name="request"></label>
+                <label class="w3-text-teal" title="question"><b>Question</b><input type="radio" name="request"></label>
+                <label class="w3-text-teal" title="comment"><b>Comment</b><input type="radio" name="request"></label>
             </p>
             <p>
-                <label for="message">Message</label><br>
+                <label class="w3-text-teal" title="topic"><b>What Topic</b></label>
+                <input class="w3-check w3-text-teal" type="checkbox">
+                <label>HTML</label>
+                <input class="w3-check w3-text-teal" type="checkbox">
+                <label>CSS</label>
+                <input class="w3-check w3-text-teal" type="checkbox">
+                <label>JavaScript</label>
+            </p>
+            
+            <button class="w3-button w3-block w3-section w3-teal w3-ripple w3-padding">Send</button>
+            
+            </form>
+       <!-- <form class="w3-container" id="youveGotMail" action="mailto:e3613141@student.dcccd.edu" method="post">
+            <p>
+                <label class="w3-text-deep-purple" title="fullname"><b>First and Last Name</b><input class="w3-input w3-hover-pale-red" style="width:30%" type="text" name="fullname" placeholder="Full Name"></label>
+            </p>
+            <p>
+                <label class="w3-text-deep-purple" title="options"><b>How Soon Would You Like A Response</b></label>
+                <select name="optionsID">
+                  <option value="">&larr;&nbsp;Response Time&nbsp;&rarr;</option>
+                  <option value="1">ASAP</option>
+                  <option value="2">Within 24 Hours</option>
+                  <option value="3">It Doesn't Matter</option>
+                </select>
+            </p>
+            <p>
+                <label class="w3-text-deep-purple" title="question"><b>Question</b><input type="radio" name="request"></label>
+                <label class="w3-text-deep-purple" title="comment"><b>Comment</b><input type="radio" name="request"></label>
+            </p>
+            <p>
+                <label class="w3-text-deep-purple" for="message"><b>Message</b></label><br>
                 <textarea id="message" name="message"></textarea>
             </p>
             <input type="submit" name="submit" value="Send Mail">
             <input type="reset" value="Erase Me">
-        </form>
+        </form> -->
     </fieldset>
-    <footer>
-        <p>Author: Courtney Pandey </p>
-        <p>This website is a project for <a href="https://www.dallascollege.edu/pages/default.aspx">Dallas Community College</a></p>
-        <p>Contact: <a href="mailto:e3613141@student.dcccd.edu">Email me</a></p>
-     </footer>
+    <footer class="w3-container w3-deep-purple w3-center">
+        <p>This website is a project for <a href="https://www.dallascollege.edu/pages/default.aspx" class="w3-button w3-hover-purple w3-round-xxlarge">Dallas Community College</a>    
+        Author: Courtney Pandey</p> <p> <i class="fa fa-envelope-open" style="font-size:36px;color:palevioletred"></i> Contact: <a href="mailto:e3613141@student.dcccd.edu" class="w3-button w3-hover-purple w3-round-xxlarge">Email</a></p>
+    </footer>
    </body>
 </html>
